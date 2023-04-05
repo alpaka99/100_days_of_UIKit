@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bEB-NJ-akY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Pwe-JZ-Wpx">
+            <objects>
+                <viewController id="tdu-jE-UXB" customClass="ViewController" customModule="UIKit_day_30" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="IfC-Pj-4Yy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="flag1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5V-sR-Xml">
+                                <rect key="frame" x="96" y="146" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="V9f-ML-QUZ"/>
+                                    <constraint firstAttribute="width" secondItem="L5V-sR-Xml" secondAttribute="height" multiplier="2:1" id="dYp-4y-kgY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="estonia"/>
+                                <connections>
+                                    <action selector="isRightFlag:" destination="tdu-jE-UXB" eventType="touchUpInside" id="Fab-ar-AwA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="flag3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBz-JT-NlO">
+                                <rect key="frame" x="96" y="601" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nBz-JT-NlO" secondAttribute="height" multiplier="2:1" id="LPF-vd-2pT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="estonia"/>
+                                <connections>
+                                    <action selector="isRightFlag:" destination="tdu-jE-UXB" eventType="touchUpInside" id="sIn-P2-wVT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="flag2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUs-aW-BaH">
+                                <rect key="frame" x="96" y="356" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gUs-aW-BaH" secondAttribute="height" multiplier="2:1" id="nfj-Zi-UwG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="estonia"/>
+                                <connections>
+                                    <action selector="isRightFlag:" destination="tdu-jE-UXB" eventType="touchUpInside" id="mFL-9N-bdt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LjU-z4-B1x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L5V-sR-Xml" firstAttribute="centerX" secondItem="IfC-Pj-4Yy" secondAttribute="centerX" id="CEd-rm-z2d"/>
+                            <constraint firstItem="L5V-sR-Xml" firstAttribute="trailing" secondItem="gUs-aW-BaH" secondAttribute="trailing" id="J5P-w1-08r"/>
+                            <constraint firstItem="nBz-JT-NlO" firstAttribute="top" secondItem="gUs-aW-BaH" secondAttribute="bottom" constant="145" id="KoS-jX-gyo"/>
+                            <constraint firstItem="gUs-aW-BaH" firstAttribute="top" secondItem="L5V-sR-Xml" secondAttribute="bottom" constant="110" id="QZz-RJ-lpy"/>
+                            <constraint firstItem="gUs-aW-BaH" firstAttribute="width" secondItem="L5V-sR-Xml" secondAttribute="width" id="Sr1-5G-Jjl"/>
+                            <constraint firstItem="gUs-aW-BaH" firstAttribute="height" secondItem="L5V-sR-Xml" secondAttribute="height" id="Uga-KJ-x3p"/>
+                            <constraint firstItem="L5V-sR-Xml" firstAttribute="leading" secondItem="nBz-JT-NlO" secondAttribute="leading" id="VWO-aX-0bh"/>
+                            <constraint firstItem="gUs-aW-BaH" firstAttribute="centerX" secondItem="L5V-sR-Xml" secondAttribute="centerX" id="aLo-xp-Evu"/>
+                            <constraint firstItem="L5V-sR-Xml" firstAttribute="trailing" secondItem="nBz-JT-NlO" secondAttribute="trailing" id="bk4-rn-37j"/>
+                            <constraint firstItem="L5V-sR-Xml" firstAttribute="leading" secondItem="gUs-aW-BaH" secondAttribute="leading" id="nCv-WG-CMh"/>
+                            <constraint firstItem="nBz-JT-NlO" firstAttribute="width" secondItem="gUs-aW-BaH" secondAttribute="width" id="ohJ-xV-pEI"/>
+                            <constraint firstItem="L5V-sR-Xml" firstAttribute="leading" secondItem="LjU-z4-B1x" secondAttribute="leading" constant="96" id="qU9-P3-TKo"/>
+                            <constraint firstItem="gUs-aW-BaH" firstAttribute="leading" secondItem="L5V-sR-Xml" secondAttribute="leading" id="r9f-p5-k11"/>
+                            <constraint firstItem="gUs-aW-BaH" firstAttribute="trailing" secondItem="L5V-sR-Xml" secondAttribute="trailing" id="rsz-92-EaB"/>
+                            <constraint firstItem="L5V-sR-Xml" firstAttribute="top" secondItem="LjU-z4-B1x" secondAttribute="top" constant="43" id="tB5-FY-dM8"/>
+                            <constraint firstItem="nBz-JT-NlO" firstAttribute="height" secondItem="gUs-aW-BaH" secondAttribute="height" id="y9u-dU-YRw"/>
+                            <constraint firstItem="LjU-z4-B1x" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nBz-JT-NlO" secondAttribute="bottom" constant="20" id="z1Y-Co-grd"/>
+                            <constraint firstItem="nBz-JT-NlO" firstAttribute="centerX" secondItem="gUs-aW-BaH" secondAttribute="centerX" id="zuI-7u-ynP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Rn-oA-tcK"/>
+                    <connections>
+                        <outlet property="flag1" destination="L5V-sR-Xml" id="wYL-Ya-Hu1"/>
+                        <outlet property="flag2" destination="gUs-aW-BaH" id="gx3-Oz-VhM"/>
+                        <outlet property="flag3" destination="nBz-JT-NlO" id="aaF-jU-b5S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZa-fg-gFY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347.3282442748091" y="-710.56338028169023"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pEW-w9-bBq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bEB-NJ-akY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y5q-1F-7M8">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tdu-jE-UXB" kind="relationship" relationship="rootViewController" id="yIE-JV-Hdi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hND-gQ-897" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420.61068702290072" y="-710.56338028169023"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="estonia" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
