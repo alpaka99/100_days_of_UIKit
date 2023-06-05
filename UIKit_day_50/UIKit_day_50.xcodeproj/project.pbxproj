@@ -14,6 +14,7 @@
 		CEA08BD42A2CC5460029D633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA08BD32A2CC5460029D633 /* Assets.xcassets */; };
 		CEA08BD72A2CC5460029D633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA08BD52A2CC5460029D633 /* LaunchScreen.storyboard */; };
 		CEA08BDF2A2CC6770029D633 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA08BDE2A2CC6770029D633 /* Card.swift */; };
+		CEA08BE12A2E88990029D633 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA08BE02A2E88990029D633 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CEA08BD62A2CC5460029D633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA08BD82A2CC5460029D633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA08BDE2A2CC6770029D633 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CEA08BE02A2E88990029D633 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				CEA08BCA2A2CC5450029D633 /* AppDelegate.swift */,
 				CEA08BCC2A2CC5450029D633 /* SceneDelegate.swift */,
 				CEA08BCE2A2CC5450029D633 /* ViewController.swift */,
+				CEA08BE02A2E88990029D633 /* DetailViewController.swift */,
 				CEA08BDE2A2CC6770029D633 /* Card.swift */,
 				CEA08BD02A2CC5450029D633 /* Main.storyboard */,
 				CEA08BD32A2CC5460029D633 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				CEA08BCF2A2CC5450029D633 /* ViewController.swift in Sources */,
 				CEA08BCB2A2CC5450029D633 /* AppDelegate.swift in Sources */,
+				CEA08BE12A2E88990029D633 /* DetailViewController.swift in Sources */,
 				CEA08BCD2A2CC5450029D633 /* SceneDelegate.swift in Sources */,
 				CEA08BDF2A2CC6770029D633 /* Card.swift in Sources */,
 			);

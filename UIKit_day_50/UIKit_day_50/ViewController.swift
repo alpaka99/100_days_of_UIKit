@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UITableViewController, UINavigationControllerDelegate ,UIImagePickerControllerDelegate {
 
     var cards: [Card] = [Card]()
+    var imageName: String?
+    var caption: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,9 +36,16 @@ class ViewController: UITableViewController, UINavigationControllerDelegate ,UII
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected")
+//        cards.remove(at: indexPath.row)
+//        save()
+//        tableView.reloadData()
         
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailView") as? DetailViewController
+        vc?.card = cards[indexPath.row]
+
+        navigationController?.pushViewController(vc!, animated: true)
     }
+    
     
     @objc func addPicture() {
         let picker = UIImagePickerController()
@@ -55,24 +64,33 @@ class ViewController: UITableViewController, UINavigationControllerDelegate ,UII
             try? jpegData.write(to: imagePath)
         }
         
+        self.imageName = imageName
+        
+        
+        picker.dismiss(animated: true)
+        loadCaptionAlert()
+    }
+    
+    func loadCaptionAlert() {
         let ac = UIAlertController(title: "Please", message: "Enter caption for this image", preferredStyle: .alert)
         
         ac.addTextField()
         
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        ac.addAction(UIAlertAction(title: "Submit", style: .default) { [weak self, weak ac, weak picker] _ in
+        ac.addAction(UIAlertAction(title: "Submit", style: .default) { [weak self, weak ac] _ in
             let caption = ac?.textFields?[0].text
             
-            let card = Card(image: imageName, caption: caption ?? "Unknown")
+            guard let unwrappedImageName = self?.imageName else { return }
+            guard let unwrappedCaption = caption else { return }
+            let card = Card(image: unwrappedImageName, caption: unwrappedCaption)
             self?.cards.append(card)
             self?.save()
             self?.tableView.reloadData()
             
             ac?.dismiss(animated: true)
-            picker?.dismiss(animated: true)
         })
         
-        
+        present(ac, animated: true)
     }
 
     func getDocumentsDirectory() -> URL {
