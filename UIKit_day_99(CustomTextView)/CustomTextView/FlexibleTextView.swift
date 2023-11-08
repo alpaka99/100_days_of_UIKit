@@ -96,80 +96,80 @@ struct ChatViewControllerRepresentable: UIViewControllerRepresentable {
 class TableViewController: UITableViewController {
     private let cellId = "Cell"
     // short
-    //    let chatMessages: [[ChatMessage]] = [
-    //        [
-    //            ChatMessage(text: "Here is my first message", textType: .inComming, date: "23/05/25"),
-    //         ChatMessage(text: "I'm going to message another long message that will word wrap", textType: .inComming, date: "23/05/25")
-    //        ]
-    //    ]
+        let chatMessages: [[ChatMessage]] = [
+            [
+                ChatMessage(text: "Here is my first message", textType: .inComming, date: "23/05/25")
+//             ChatMessage(text: "I'm going to message another long message that will word wrap", textType: .inComming, date: "23/05/25")
+            ]
+        ]
     
     // middle
-    let chatMessages: [[ChatMessage]] = [
-        [
-            ChatMessage(text: "Here is my first message", textType: .inComming, date: "23/05/25"),
-            ChatMessage(text: "I'm going to message another long message that will word wrap", textType: .inComming, date: "23/05/25")
-        ],
-        [
-            ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26"),
-            ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26"),
-            ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26")
-        ],
-        [
-            ChatMessage(text: "I'm going to message another long message that will word wrap ", textType: .inComming, date: "23/05/27"),
-            ChatMessage(text: "whaddup dawg", textType: .outGoing, date: "23/05/27"),
-            ChatMessage(text: "I'm going to message another long message that will word wrap ", textType: .inComming, date: "23/05/27"),
-            ChatMessage(text: "whaddup dawg", textType: .outGoing, date: "23/05/27")
-        ],
-        [
-            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
-            ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/28"),
-            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
-            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
-        ],
-    ]
+//    let chatMessages: [[ChatMessage]] = [
+//        [
+//            ChatMessage(text: "Here is my first message", textType: .inComming, date: "23/05/25"),
+//            ChatMessage(text: "I'm going to message another long message that will word wrap", textType: .inComming, date: "23/05/25")
+//        ],
+//        [
+//            ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26"),
+//            ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26"),
+//            ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26")
+//        ],
+//        [
+//            ChatMessage(text: "I'm going to message another long message that will word wrap ", textType: .inComming, date: "23/05/27"),
+//            ChatMessage(text: "whaddup dawg", textType: .outGoing, date: "23/05/27"),
+//            ChatMessage(text: "I'm going to message another long message that will word wrap ", textType: .inComming, date: "23/05/27"),
+//            ChatMessage(text: "whaddup dawg", textType: .outGoing, date: "23/05/27")
+//        ],
+//        [
+//            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
+//            ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/28"),
+//            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
+//            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
+//        ],
+//    ]
     
     // long
-    //    let chatMessages: [[ChatMessage]] = [
-    //        [
-    //            ChatMessage(text: "Here is my first message", textType: .inComming, date: "23/05/25"),
-    //         ChatMessage(text: "I'm going to message another long message that will word wrap", textType: .inComming, date: "23/05/25")
-    //        ],
-    //        [
-    //            ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26"),
-    //            ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26"),
-    //            ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26")
-    //        ],
-    //        [
-    //            ChatMessage(text: "I'm going to message another long message that will word wrap ", textType: .inComming, date: "23/05/27"),
-    //             ChatMessage(text: "whaddup dawg", textType: .outGoing, date: "23/05/27"),
-    //            ChatMessage(text: "I'm going to message another long message that will word wrap ", textType: .inComming, date: "23/05/27"),
-    //             ChatMessage(text: "whaddup dawg", textType: .outGoing, date: "23/05/27")
-    //        ],
-    //        [
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/28"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
-    //        ],
-    //        [
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/29"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/29"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/29"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/29"),
-    //        ],
-    //        [
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/30"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/30"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/30"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/30"),
-    //        ],
-    //        [
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/31"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/31"),
-    //            ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/31"),
-    //            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum accumsan nisl et lobortis. Donec magna enim, pulvinar vel pellentesque eget, ultricies non urna. Nullam in laoreet enim. Maecenas ut maximus nisi. Aenean fermentum, lorem eget cursus tincidunt, justo nunc pharetra leo, in tincidunt orci purus a tortor. Donec et lectus molestie, efficitur sapien vel, euismod nisl. Maecenas quis diam a ante maximus feugiat nec et nibh. Aliquam in nunc ante. Duis id nunc eget arcu euismod interdum sit amet nec mauris. Nam at tortor in arcu laoreet semper vel vitae elit. Vivamus vitae nibh eu justo aliquam euismod. In vulputate enim et bibendum dictum. Quisque eros urna, tempor fermentum laoreet id, eleifend sit amet neque. Aenean auctor felis gravida sapien auctor dictum. Proin eu nulla sed eros efficitur varius sed ut lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor neque id pharetra facilisis. Quisque ac luctus ante. Nunc sed urna tempus, rhoncus libero nec, bibendum nisi. Vestibulum vitae enim quam. Sed dolor nisl, gravida eu commodo ac, aliquam sed purus. Vivamus a erat vel arcu venenatis semper. Nullam urna odio, ultrices ut elit at, sodales congue magna. In hac habitasse platea dictumst. Proin nec efficitur lectus, at ullamcorper nulla. Donec sollicitudin luctus posuere. Aliquam faucibus eros id erat tristique porta. In hendrerit faucibus leo eget ullamcorper. Quisque laoreet erat at lacus pellentesque sodales. Suspendisse semper sem elit, sed faucibus ante sagittis quis. Ut suscipit dolor gravida mollis egestas. Sed arcu lectus, ornare vel ante sed, congue volutpat purus. Etiam vestibulum id mauris eget finibus. Nullam ac suscipit turpis, nec pellentesque turpis. Nunc vitae finibus neque. Morbi dapibus sit amet nisl facilisis tempus. Phasellus gravida dolor sed neque porttitor, porttitor placerat arcu venenatis. Praesent mattis sagittis risus, elementum finibus quam pretium id. Donec non euismod lorem, quis fringilla nunc. Curabitur in nunc velit. Donec ultrices orci urna, non vestibulum orci consequat et. Sed at tortor ac nibh varius porta eu in nibh. Morbi dapibus purus libero, a gravida leo aliquet sed. Donec euismod, urna porta pellentesque scelerisque, ex enim sagittis leo, vitae scelerisque tortor ligula non tellus. Pellentesque id auctor est. Donec mattis sem non condimentum dictum. Aliquam vel cursus nisl, eu congue nisi. Nam tortor quam, malesuada vitae efficitur vel, commodo eget lorem. Aliquam erat volutpat. Maecenas lobortis, sem eu egestas lacinia, est elit semper quam, in sollicitudin mauris nibh in sapien. Mauris pharetra eget lorem in ultrices.", textType: .outGoing, date: "23/05/31"),
-    //        ]
-    //    ]
+//        let chatMessages: [[ChatMessage]] = [
+//            [
+//                ChatMessage(text: "Here is my first message", textType: .inComming, date: "23/05/25"),
+//             ChatMessage(text: "I'm going to message another long message that will word wrap", textType: .inComming, date: "23/05/25")
+//            ],
+//            [
+//                ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26"),
+//                ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26"),
+//                ChatMessage(text: "I'm going to message another long message that will word wrap I'm going to message another long message that will word wrap", textType: .outGoing, date: "23/05/26")
+//            ],
+//            [
+//                ChatMessage(text: "I'm going to message another long message that will word wrap ", textType: .inComming, date: "23/05/27"),
+//                 ChatMessage(text: "whaddup dawg", textType: .outGoing, date: "23/05/27"),
+//                ChatMessage(text: "I'm going to message another long message that will word wrap ", textType: .inComming, date: "23/05/27"),
+//                 ChatMessage(text: "whaddup dawg", textType: .outGoing, date: "23/05/27")
+//            ],
+//            [
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/28"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/28"),
+//            ],
+//            [
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/29"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/29"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/29"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/29"),
+//            ],
+//            [
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/30"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/30"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/30"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/30"),
+//            ],
+//            [
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/31"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .inComming, date: "23/05/31"),
+//                ChatMessage(text: "Fourth ChatMessage on the way", textType: .outGoing, date: "23/05/31"),
+//                ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum accumsan nisl et lobortis. Donec magna enim, pulvinar vel pellentesque eget, ultricies non urna. Nullam in laoreet enim. Maecenas ut maximus nisi. Aenean fermentum, lorem eget cursus tincidunt, justo nunc pharetra leo, in tincidunt orci purus a tortor. Donec et lectus molestie, efficitur sapien vel, euismod nisl. Maecenas quis diam a ante maximus feugiat nec et nibh. Aliquam in nunc ante. Duis id nunc eget arcu euismod interdum sit amet nec mauris. Nam at tortor in arcu laoreet semper vel vitae elit. Vivamus vitae nibh eu justo aliquam euismod. In vulputate enim et bibendum dictum. Quisque eros urna, tempor fermentum laoreet id, eleifend sit amet neque. Aenean auctor felis gravida sapien auctor dictum. Proin eu nulla sed eros efficitur varius sed ut lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor neque id pharetra facilisis. Quisque ac luctus ante. Nunc sed urna tempus, rhoncus libero nec, bibendum nisi. Vestibulum vitae enim quam. Sed dolor nisl, gravida eu commodo ac, aliquam sed purus. Vivamus a erat vel arcu venenatis semper. Nullam urna odio, ultrices ut elit at, sodales congue magna. In hac habitasse platea dictumst. Proin nec efficitur lectus, at ullamcorper nulla. Donec sollicitudin luctus posuere. Aliquam faucibus eros id erat tristique porta. In hendrerit faucibus leo eget ullamcorper. Quisque laoreet erat at lacus pellentesque sodales. Suspendisse semper sem elit, sed faucibus ante sagittis quis. Ut suscipit dolor gravida mollis egestas. Sed arcu lectus, ornare vel ante sed, congue volutpat purus. Etiam vestibulum id mauris eget finibus. Nullam ac suscipit turpis, nec pellentesque turpis. Nunc vitae finibus neque. Morbi dapibus sit amet nisl facilisis tempus. Phasellus gravida dolor sed neque porttitor, porttitor placerat arcu venenatis. Praesent mattis sagittis risus, elementum finibus quam pretium id. Donec non euismod lorem, quis fringilla nunc. Curabitur in nunc velit. Donec ultrices orci urna, non vestibulum orci consequat et. Sed at tortor ac nibh varius porta eu in nibh. Morbi dapibus purus libero, a gravida leo aliquet sed. Donec euismod, urna porta pellentesque scelerisque, ex enim sagittis leo, vitae scelerisque tortor ligula non tellus. Pellentesque id auctor est. Donec mattis sem non condimentum dictum. Aliquam vel cursus nisl, eu congue nisi. Nam tortor quam, malesuada vitae efficitur vel, commodo eget lorem. Aliquam erat volutpat. Maecenas lobortis, sem eu egestas lacinia, est elit semper quam, in sollicitudin mauris nibh in sapien. Mauris pharetra eget lorem in ultrices.", textType: .outGoing, date: "23/05/31"),
+//            ]
+//        ]
     // 즉시 최하단으로 이동하기 위한 버튼 -> 제작중
     private var floatingButton: UIButton?
     
@@ -331,6 +331,7 @@ struct TestChatView: View {
     @State var showWebView: Bool = false
     var body: some View {
         ChatViewControllerRepresentable(isBottom: $isBottom, showWebView: $showWebView)
+            .frame(height: 300)
             .sheet(isPresented: $isBottom) {
                 VStack {
                     Text("Bottom")
